@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>{% block title %}Fieldnotes &#8212; thoughtful goods{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'store/styles.css' %}">
+</head>
+<body>
+  <div class="announcement">Small things, made to last <span>&#10035;</span> Free shipping on orders over &#8377;2,000</div>
+  <header class="site-header">
+    <a class="brand" href="{% url 'store:product_list' %}"><span class="brand-mark">f.</span><span>fieldnotes<small>OBJECTS FOR EVERYDAY</small></span></a>
+    <nav aria-label="Main navigation"><a class="nav-link active" href="{% url 'store:product_list' %}">Shop</a><a class="nav-link" href="#story">Our story</a></nav>
+    <a class="cart-link" href="{% url 'store:cart_detail' %}"><span class="bag-icon">&#9649;</span><span>Bag</span><span class="cart-count">{{ cart_count }}</span></a>
+  </header>
+  {% if messages %}<div class="messages" aria-live="polite">{% for message in messages %}<p class="message {{ message.tags }}">{{ message }}</p>{% endfor %}</div>{% endif %}
+  <main>{% block content %}{% endblock %}</main>
+  <footer id="story" class="site-footer"><a class="brand footer-brand" href="{% url 'store:product_list' %}"><span class="brand-mark">f.</span><span>fieldnotes<small>OBJECTS FOR EVERYDAY</small></span></a><p>Useful things. Thoughtfully chosen.<br>Made for the everyday moments.</p><span class="footer-copy">&#169; 2026 Fieldnotes Studio</span></footer>
+</body>
+</html>

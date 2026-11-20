@@ -1,0 +1,12 @@
+[20/Nov/2026 14:18:20] "GET / HTTP/1.1" 200 28421
+[20/Nov/2026 14:18:20] "GET / HTTP/1.1" 200 28421
+[20/Nov/2026 14:18:23] "GET / HTTP/1.1" 200 28421
+[20/Nov/2026 14:18:23] "GET /static/store/styles.css HTTP/1.1" 200 22086
+Not Found: /favicon.ico
+[20/Nov/2026 14:18:27] "GET /favicon.ico HTTP/1.1" 404 3650
+[20/Nov/2026 14:18:30] "GET / HTTP/1.1" 200 28421
+[20/Nov/2026 14:18:31] "GET /static/store/styles.css HTTP/1.1" 200 22086
+Not Found: /favicon.ico
+[20/Nov/2026 14:18:34] "GET /favicon.ico HTTP/1.1" 404 3650
+[20/Nov/2026 14:18:36,926] - Broken pipe from ('127.0.0.1', 54634)
+[20/Nov/2026 14:18:36,961] - Broken pipe from ('127.0.0.1', 54635)

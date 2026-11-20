@@ -1,0 +1,40 @@
+[20/Nov/2026 14:22:05] "GET / HTTP/1.1" 200 26938
+[20/Nov/2026 14:22:05] "GET / HTTP/1.1" 200 26938
+[20/Nov/2026 14:22:05] "GET /static/store/products/sunday-ceramic.jpg HTTP/1.1" 200 106785
+[20/Nov/2026 14:22:05] "GET /static/store/products/sunday-ceramic.jpg HTTP/1.1" 200 106785
+[20/Nov/2026 14:22:05,998] - Broken pipe from ('127.0.0.1', 58187)
+[20/Nov/2026 14:22:06,021] - Broken pipe from ('127.0.0.1', 58189)
+[20/Nov/2026 14:22:40] "GET / HTTP/1.1" 200 26938
+[20/Nov/2026 14:22:41] "GET /static/store/styles.css HTTP/1.1" 200 22241
+[20/Nov/2026 14:22:41] "GET /static/store/products/sunday-ceramic.jpg HTTP/1.1" 200 106785
+[20/Nov/2026 14:22:41] "GET /static/store/products/mug-cloud.jpg HTTP/1.1" 200 101042
+[20/Nov/2026 14:22:41] "GET /static/store/products/candle.jpg HTTP/1.1" 200 175643
+[20/Nov/2026 14:22:41] "GET /static/store/products/bottle.jpg HTTP/1.1" 200 73274
+[20/Nov/2026 14:22:41] "GET /static/store/products/vase.jpg HTTP/1.1" 200 200505
+[20/Nov/2026 14:22:41] "GET /static/store/products/tote.jpg HTTP/1.1" 200 305592
+[20/Nov/2026 14:22:41] "GET /static/store/products/planter.jpg HTTP/1.1" 200 51159
+[20/Nov/2026 14:22:41] "GET /static/store/products/journal.jpg HTTP/1.1" 200 78965
+[20/Nov/2026 14:22:41] "GET /static/store/products/bowl.jpg HTTP/1.1" 200 146463
+[20/Nov/2026 14:22:41] "GET /static/store/products/mug-espresso.jpg HTTP/1.1" 200 75955
+[20/Nov/2026 14:22:41] "GET /static/store/products/planter-green.jpg HTTP/1.1" 200 42240
+[20/Nov/2026 14:22:41] "GET /static/store/products/soap.jpg HTTP/1.1" 200 164354
+[20/Nov/2026 14:22:41] "GET /static/store/products/linen.jpg HTTP/1.1" 200 240280
+Not Found: /favicon.ico
+[20/Nov/2026 14:22:44] "GET /favicon.ico HTTP/1.1" 404 3650
+[20/Nov/2026 14:22:51] "GET / HTTP/1.1" 200 26938
+[20/Nov/2026 14:22:51] "GET /static/store/styles.css HTTP/1.1" 200 22241
+[20/Nov/2026 14:22:51] "GET /static/store/products/sunday-ceramic.jpg HTTP/1.1" 200 106785
+[20/Nov/2026 14:22:51] "GET /static/store/products/mug-cloud.jpg HTTP/1.1" 200 101042
+[20/Nov/2026 14:22:51] "GET /static/store/products/candle.jpg HTTP/1.1" 200 175643
+[20/Nov/2026 14:22:51] "GET /static/store/products/vase.jpg HTTP/1.1" 200 200505
+[20/Nov/2026 14:22:51] "GET /static/store/products/tote.jpg HTTP/1.1" 200 305592
+[20/Nov/2026 14:22:51] "GET /static/store/products/bottle.jpg HTTP/1.1" 200 73274
+[20/Nov/2026 14:22:51] "GET /static/store/products/planter.jpg HTTP/1.1" 200 51159
+[20/Nov/2026 14:22:51] "GET /static/store/products/journal.jpg HTTP/1.1" 200 78965
+[20/Nov/2026 14:22:51] "GET /static/store/products/bowl.jpg HTTP/1.1" 200 146463
+[20/Nov/2026 14:22:51] "GET /static/store/products/mug-espresso.jpg HTTP/1.1" 200 75955
+[20/Nov/2026 14:22:51] "GET /static/store/products/planter-green.jpg HTTP/1.1" 200 42240
+[20/Nov/2026 14:22:51] "GET /static/store/products/soap.jpg HTTP/1.1" 200 164354
+[20/Nov/2026 14:22:51] "GET /static/store/products/linen.jpg HTTP/1.1" 200 240280
+Not Found: /favicon.ico
+[20/Nov/2026 14:22:54] "GET /favicon.ico HTTP/1.1" 404 3650

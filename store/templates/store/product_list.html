@@ -1,0 +1,18 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block title %}Shop thoughtful goods &mdash; Fieldnotes{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE MORE INTENTIONAL</p><h1>Good things for<br><em>everyday living.</em></h1><p class="hero-description">A considered collection of useful objects, made to bring a little more joy to your daily rituals.</p><a class="text-link" href="#collection">Explore the collection <span>&darr;</span></a></div>
+  <div class="hero-art" role="img" aria-label="Minimal still life of a ceramic vase and a leafy branch"><div class="sun-disc"></div><div class="art-shelf"></div><div class="art-vase"><span></span></div><div class="art-stem stem-one"></div><div class="art-stem stem-two"></div><div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="art-leaf leaf-three"></div><div class="art-leaf leaf-four"></div><div class="art-caption">OBJECTS WITH A PURPOSE <span>&#10033;</span></div></div>
+</section>
+<section class="collection section-wrap" id="collection"><div class="section-heading"><div><p class="eyebrow">THE GOOD STUFF</p><h2>Made for your kind of everyday.</h2></div><span class="result-count">{{ products|length }} considered pieces</span></div>
+  <div class="product-grid">
+  {% for product in products %}
+    {% cycle 'clay' 'rose' 'sage' 'sky' 'sand' 'mint' 'lilac' 'cream' as palette silent %}
+    <article class="product-card"><div class="product-image tone-{{ palette }}"><span class="product-badge">FIELDNOTE NO. {{ forloop.counter|stringformat:'02d' }}</span><img class="product-photo" src="{% static product.photo_url %}" alt="{{ product.name }}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="product-art art-{{ product.illustration }}" role="img" aria-label="Illustration of {{ product.name }}" hidden><span class="art-detail"></span><span class="art-highlight"></span></div><span class="image-spark">&#10033;</span></div><div class="product-info"><div><p class="product-category">EVERYDAY OBJECT</p><h3>{{ product.name }}</h3></div><strong class="price">&#8377;{{ product.price }}</strong></div><p class="product-description">{{ product.description|default:'Thoughtfully made for the moments that make a day.' }}</p><div class="card-bottom"><span class="stock-note">{{ product.stock }} in stock</span><form method="post" action="{% url 'store:cart_add' product.id %}">{% csrf_token %}<button class="add-button" type="submit" aria-label="Add {{ product.name }} to bag">Add to bag <span>+</span></button></form></div></article>
+  {% empty %}<div class="empty-state"><span>&#10033;</span><h3>A little quiet here.</h3><p>There are no pieces on the shelf just yet. Add products from the admin to get started.</p><a class="button button-dark" href="/admin/">Open the admin</a></div>{% endfor %}
+  </div>
+</section>
+<section class="promise-strip"><div><span>&#10033;</span><p>Thoughtfully selected</p></div><div><span>&#8599;</span><p>Made for real life</p></div><div><span>&#9825;</span><p>Better, not more</p></div></section>
+{% endblock %}
